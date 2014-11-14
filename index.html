@@ -75,21 +75,7 @@
     <a href="#top">Scroll to top</a>
     <a href="https://github.com/Dembeor/dembeor.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/Dembeor/dembeor.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
     <p class="name"></p>
-    <?php
-    $plik="zlicz.txt";
-    $file=fopen($plik, "r");
-    flock($file, 1);
-    $liczba=fgets($file, 16);
-    flock($file, 3);
-    fclose($file);
-    $liczba++;
-    $file=fopen($plik, "w");
-    flock($file, 2);
-    fwrite($file, $liczba++);
-    flock($file, 3);
-    fclose($file); 
-    }
-    ?>
+    <script src="http://www.licz.pl/counter.php?name=NAZWA-LICZNIKA&start=WARTOSC-STARTOWA"></script>
   </div>
 
   
